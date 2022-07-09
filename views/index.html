@@ -1,0 +1,57 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+	<title>Bill's P2P Chat</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/media/icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/media/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/media/icon/favicon-16x16.png">
+	<link rel="manifest" href="/media/icon/site.json">
+	<link rel="mask-icon" href="/media/icon/safari-pinned-tab.svg" color="#00073e">
+	<link rel="shortcut icon" href="/media/icon/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="RPTPay">
+	<meta name="application-name" content="RPTPay">
+	<meta name="msapplication-TileColor" content="#00073e">
+	<meta name="msapplication-config" content="/media/icon/browserconfig.xml">
+	<meta name="theme-color" content="#00073e">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="/style.css">
+
+	<script src="/lib/peerjs.js"></script>
+	<script src="/main.js" type="module"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Bill's Video & Audio Chat</h1>
+		<video class="remote-video" autoplay></video>
+
+		<div class="form">
+			<input type="text" id="connect-to-peer" title="Peer ID here!" />
+			<button type="button" onclick="connectToPeer()">Conectar</button>
+		</div>
+
+		<div class="messages"></div>
+	</div>
+	<footer>
+		<div class="container">
+			<ul>
+				<li>&copy; Todos os direitos reservados</li>
+				<li><a href="https://billrocha.com">https://billrocha.com</a> | <a
+						href="https://api.whatsapp.com/send?phone=5521995674969&text=Olá!" target="new"
+						title="WhatsApp">21 99567 4969<i class="fab fa-whatsapp"></i></a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+
+</html>
